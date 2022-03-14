@@ -1,0 +1,14 @@
+name: Jek Shell Commands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print out a string 
+        run: echo "Hello World Jek"
+      - name: Run multiple commands
+        run: |
+          node -v
+          npm -v
